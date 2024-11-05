@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
 
-const CryptoList = () => {
+const TokenViewer = () => {
   const [data, setData] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [nextPageData, setNextPageData] = useState(null);
   const [prevPageData, setPrevPageData] = useState(null);
   const [index, setIndex] = useState(0);
-  const itemsPerPage = 10;
+  // const itemsPerPage = 10;
 
   const fetchData = async () => {
     const response = await fetch(
@@ -98,4 +98,4 @@ const CryptoList = () => {
   );
 };
 
-export default CryptoList;
+export default TokenViewer;
