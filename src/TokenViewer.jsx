@@ -103,8 +103,8 @@ const TokenViewer = () => {
   };
 
   return (
-    <div>
-      <h1>Cryptocurrency Data</h1>
+    <section>
+      <h1>Coin   Data</h1>
 
       <table>
         <colgroup>
@@ -115,9 +115,9 @@ const TokenViewer = () => {
 
         <tbody>
           <tr>
-            <th>Coins</th>
+            <th>💰Coins</th>
             <th>Code</th>
-            <th>Price</th>
+            <th>🤑Price</th>
             <th>Total Supply</th>
           </tr>
           {data.map((coin) => (
@@ -139,9 +139,8 @@ const TokenViewer = () => {
         </button>
         <button onClick={goToNextPage}>Next</button>
       </div>
-    </div>
+    </section>
   );
 };
-
 
 export default TokenViewer;

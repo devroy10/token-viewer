@@ -1,0 +1,192 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    /* min-height: 100vh; */
+    justify-content: center;
+    padding: 1rem 2rem;
+    margin-inline: auto;
+}
+
+tr:nth-of-type(even) {
+    background-color: #ffffff;
+}
+
+tr:nth-of-type(odd) {
+    background-color: #DCDCDC;
+}
+
+
+.wrapper {
+    width: 100%;
+    max-width: 45rem;
+    max-height: fit-content;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.tableContainer {
+    display: none;
+    width: 100%;
+    overflow-x: auto;
+    margin: 0 auto;
+}
+
+table {
+    min-width: 100%;
+    border-collapse: collapse;
+    border-radius: 2rem;
+}
+
+th {
+    padding: 0.5rem 0.5rem;
+    background-color: #ffffff;
+    text-align: left;
+    font-weight: 700;
+    /* border-radius: 2rem; */
+    /* font-size: 0.875rem; */
+}
+
+
+.loadingText {
+    text-align: center;
+    color: #1d4ed8;
+    /* Blue-600 */
+}
+
+
+td {
+    text-align: left;
+    /* border-bottom-width: 1px; */
+    padding: 0.5rem 0.5rem;
+    border-bottom: 1px solid #e5e7eb;
+    font-size: 0.875rem;
+    line-height: 1.25rem
+}
+
+.table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.mobileContainer {
+    display: block;
+}
+
+.card {
+    padding: 0.5rem 2rem;
+    align-items: center;
+    /* border-radius: 0.25rem; */
+    display: flex;
+    gap: 60px;
+    /* justify-content: space-between; */
+}
+
+.card:nth-last-of-type(even) {
+    background-color: #f4f4f4;
+}
+
+.cardTop {
+    display: flex;
+    flex-direction: column;
+    /* margin-right: 2rem; */
+    max-width: 10rem;
+}
+
+/* .cardTop span {
+    font-weight: 700;
+    } */
+
+.cardBottom {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-end; */
+}
+
+.cardBottom>div,
+.cardTop>div {
+    display: flex;
+    flex-direction: column;
+}
+
+.card:nth-last-of-type(odd) {
+    background-color: #ffffff;
+}
+
+.pagination {
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    /* Center aligns buttons vertically */
+}
+
+.pagination>div {
+    display: flex;
+    align-items: center;
+    /* Centers each button within its div */
+}
+
+.navBtn:hover {
+    border: 2px solid rgb(225, 225, 30);
+    margin: -2px;
+}
+
+.arrow {
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+.previous-arrow {
+    font-size: 4em;
+    font-weight: 700;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    justify-content: center;
+    display: flex;
+    gap: 0.2rem;
+    cursor: pointer;
+}
+
+
+
+
+/* MEDIA QUERIES  */
+
+@media (min-width: 768px) {
+
+    .container {
+        align-items: center;
+    }
+
+    .tableContainer {
+        display: block;
+    }
+
+
+    .mobileContainer {
+        display: none;
+    }
+
+}
+
+@media(min-width : 640px) {
+    td {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        line-height: 1.5rem
+    }
+
+    .pagination {
+        flex-direction: row;
+    }
+
+    button {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+}

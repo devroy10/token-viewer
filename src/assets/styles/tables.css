@@ -1,0 +1,79 @@
+/* General table styling */
+.primary-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.primary-table th,
+.primary-table td {
+    padding: 1.2rem;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.primary-table th {
+    background-color: #f4f4f4;
+    font-weight: 700;
+}
+
+.primary-table tbody tr:nth-child(odd) {
+    background-color: #e6e6e6;
+    /* Striped effect for odd rows */
+}
+
+.primary-table tbody tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+.primary-table tbody tr:hover {
+    background-color: #dfdfdf;
+    transition: background-color 0.2s ease-in-out !important;
+}
+
+/* Responsive table styling */
+@media (max-width: 675px) {
+
+    .primary-table,
+    .primary-table thead,
+    .primary-table tbody,
+    .primary-table th,
+    .primary-table td,
+    .primary-table tr {
+        display: block;
+        width: 100%;
+    }
+
+    .primary-table thead {
+        display: none;
+        /* Hide table headers on small screens */
+    }
+
+    .primary-table tbody tr {
+        display: flex;
+        flex-wrap: wrap;
+        border-bottom: 2px solid #ddd;
+        padding: 1rem;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .primary-table td {
+        position: relative;
+        display: flex;
+        max-width: 50%;
+        padding: 0.8rem 0;
+        border: none;
+    }
+
+    .td-primary--data-wrapper {
+        width: fit-content;
+    }
+
+    .td-primary--data-wrapper::before {
+        width: 12rem;
+        content: attr(data-label);
+        font-weight: 700;
+        display: block;
+        transform: translateX(-0.4rem);
+        margin-bottom: 0.4rem;
+    }
+}

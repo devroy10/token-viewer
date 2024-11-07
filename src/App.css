@@ -1,33 +1,10 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #DCDCDC;
 }
 
-li {
-  text-decoration: none;
-  list-style-type: none;
-}
 
-table {
-  margin: 0 auto;
-  border-collapse: collapse;
-  border: 1px solid #ccc;
-  /* font-size: 0.9em; */
-  font-family: sans-serif;
-  /* min-width: 400px; */
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-}
-
-th,
-td,
-tr {
-  padding: 12px 15px;
-  text-align: center;
-  border: 1px solid #ccc;
-}
-
-tr:nth-of-type(odd) {
-  background-color: #f3f3f3;
-}
+/* style rule for debugging appearance */
+/* div {
+    border: 1px solid red
+} */
